@@ -1,0 +1,16 @@
+
+@import "../../scss/variables.scss";
+
+.error {
+    padding: 160px 0;
+    &__title {
+        font-size: 50px;
+        text-align: center;
+        color: $orange;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        font-size: 30px;
+        text-align: center;
+    }
+}

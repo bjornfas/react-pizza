@@ -1,0 +1,149 @@
+
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img,svg {
+    max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+body {
+    background-color: $yellow;
+    font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: $black;
+}
+
+.App {
+    padding: 50px 15px;
+}
+
+.wrapper {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
+    border-radius: $border-radius;
+    max-width: 1340px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.container {
+    padding: 50px;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.btn {
+    background-color: $orange;
+    color: #fff;
+    border: 1px solid $orange;
+    @include btn;
+}
+
+.btn-inverse {
+    background-color: #fff;
+    color: $orange;
+    border: 1px solid $orange;
+    transition: .3s all;
+    @include btn;
+    &:hover {
+        background-color: $orange;
+        color: #fff; 
+    }
+}
+
+.mobile-search {
+    display: none;
+}
+
+.p-10 {
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+@import "media.scss";

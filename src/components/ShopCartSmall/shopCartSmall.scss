@@ -1,0 +1,23 @@
+
+.shop-cart {
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .3s all;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    &__item {
+        padding-right: 13px;
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+        &:last-child {
+            padding-right: 0;
+            padding-left: 13px;
+            border: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

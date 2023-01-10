@@ -1,0 +1,21 @@
+
+@import "../../scss/variables";
+
+.tabs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .active {
+        background-color: $orange;
+        color: #fff;
+        border: 1px solid $orange;
+    }
+    &__tab {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+    

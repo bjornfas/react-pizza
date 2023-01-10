@@ -1,0 +1,27 @@
+
+@import "../../scss/_variables.scss";
+
+.not-found {
+    padding: 50px 0;
+    &__container {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 80px;
+        text-align: center;
+        margin-bottom: 30px;
+        color: $orange;
+    }
+    &__subtitle {
+        font-size: 25px;
+        text-align: center;
+    }
+    &__link {
+        color: $orange;
+        transition: .3s all;
+        &:hover {
+            opacity: .8;
+        }
+    }
+}

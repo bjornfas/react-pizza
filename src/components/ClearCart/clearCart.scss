@@ -1,0 +1,36 @@
+
+@import "../../scss/variables";
+
+.clear {
+    padding: 50px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #777777;
+    }
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        img {
+            min-height: 255px;
+        }
+    }
+    &__back {
+        display: block;
+        margin: 0 auto;
+        transition: .3s all;
+        &:hover {
+            opacity: .8;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+
+@import "../../scss/_variables.scss";
+
+.pizza {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 22.8%;
+        transition: .2s all;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+    &__link {
+        &:hover {
+            .pizza__name {
+                color: $orange;
+            }
+        }
+    }
+    &__img {
+        margin: 0 auto 10px auto;
+        max-width: 260px;
+    }
+    &__name {
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: $black;
+        text-align: center;
+        transition: .2s all;
+    }
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        background: #FbFbFb;
+        border-radius: $border-radius;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    &__selection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .active {
+            background: $orange;
+            color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+            border-radius: $border-radius;
+        }
+    }
+    &__selection-item {
+        padding: 8px;
+        flex: 1 1;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__price {
+        font-size: 20px;
+    }
+    &__add {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        &:hover {
+            .pizza__add-counter {
+                background-color: #fff;
+                color: $orange;
+            }
+        }
+    }
+    &__add-icon {
+        margin-right: 10px;
+    }
+    &__add-counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $orange;
+        color: #fff;
+        font-size: 14px;
+        width: 22px;
+        height: 22px;
+        margin-left: 10px;
+        font-style: normal;
+    }
+}
